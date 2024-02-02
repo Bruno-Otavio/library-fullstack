@@ -4,9 +4,11 @@
 
 ### Tecnologias
 
-*[NodeJS](https://nodejs.org/en/) - Ambiente de execução Javascript
-*[XAMPP](https://www.apachefriends.org/pt_br/index.html - Mysql/MariaDB (XAMPP)
+* [NodeJS](https://nodejs.org/en/) - Ambiente de execução Javascript
+* [XAMPP](https://www.apachefriends.org/pt_br/index.html - Mysql/MariaDB (XAMPP)
 * Live Server - Extenção de servidor front-end VsCode para executar html
+
+-
 
 ### Como Testar
 
@@ -25,5 +27,7 @@
   node server.js
   ```
 7. Acesse a pasta front e execute o index.html via Live Server.
+
+-
 
 ## Prints das Telas
