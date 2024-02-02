@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    
+    <title>Livraria</title>
+</head>
+<body>
+    <header>
+        <h1>Livraria Seu Jorge</h1>
+    </header>
+    <main>
+        <button><a href="./pages/form.html">Cadastrar</a></button>
+        <table id="book-informations">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Lend Date</th>
+                    <th>Return Date</th>
+                    <th class="remove"><img src="./assets/trash-icon.svg" alt="remove"></th>
+                    <th class="edit-template"><img src="./assets/8666681_edit_icon.svg" alt="edit"></th>
+                    <th class="apply-template hidden"><img src="./assets/check.svg" alt="apply"></th>
+                    <th class="cancel-template hidden"><img src="./assets/close.svg" alt="cancel"></th>
+                </tr>
+            </thead>
+            <tbody id="data"></tbody>
+        </table>
+    </main>
+    <footer>
+        <h2>By Bruno</h2>
+    </footer>
+</body>
+<script src="./main.js"></script>
+</html>

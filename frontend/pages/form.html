@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Cadastro de Livros</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Livros</h1>
+    </header>
+    <main>
+        <button><a href="../index.html">Página Inicial</a></button>
+        <form action="http://127.0.0.1:3000/books" id="register" method="post">
+            <div>
+                <label for="register"><strong>Nome:</strong></label>
+                <input type="text" name="book" id="book" placeholder="Nome do Livro" required>
+            </div>
+            <div>
+                <label for="register"><strong>Autor:</strong></label>
+                <input type="text" name="author" id="author" placeholder="Autor(a) do livro" required>
+            </div>
+            <div>
+                <label for="register"><strong>Empréstimo:</strong></label>
+                <input type="date" name="lend" id="lend-date" required>
+            </div>
+            <div>
+                <label for="register"><strong>Entrega:</strong></label>
+                <input type="date" name="return" id="return-date" required>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+            <script>
+                const lend = document.querySelector("#lend-date");
+                lend.addEventListener("change", () => {
+                    const return_date = document.querySelector("#return-date");
+                    return_date.value = lend.value;
+                });
+            </script>
+        </form>
+    </main>
+    <footer>
+        <h2>By Bruno and Guilherme</h2>
+    </footer>
+</body>
+</html>
